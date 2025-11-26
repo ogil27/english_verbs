@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Marauder's Map</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header style="text-align: center; margin-bottom: 20px;">
+            <h1>🦁 Marauder's Map 🦁</h1>
+            <div class="trunk-intro">
+                <strong>Welcome, Student!</strong><br>
+                Your goal is to collect the <strong>6 Magical Artifacts</strong> to graduate.<br>
+                Choose any path you desire. Good luck!
+            </div>
+        </header>
+
+        <!-- EL BAÚL MÁGICO -->
+        <section class="trunk-container">
+            <h3 class="trunk-title">🎒 My Hogwarts Trunk</h3>
+            <div class="trunk-grid" id="trunk-grid">
+                <!-- Slots generados por JS -->
+            </div>
+        </section>
+
+        <main id="map-container">
+            <p style="text-align:center; padding: 20px;">Loading Magic Map...</p>
+        </main>
+
+        <!-- SECCIÓN DE INSTRUCCIONES -->
+        <div style="text-align:center; margin-top: 40px; border-top: 2px dashed #8b4513; padding-top: 20px;">
+            <button id="instructions-btn" class="magic-button" style="font-size: 1rem; padding: 10px 20px;">
+                Gamer Instructions 📜
+            </button>
+            
+            <div id="instructions-panel" style="display: none; margin-top: 20px; background: rgba(255,255,255,0.8); padding: 20px; border-radius: 10px; border: 1px solid #8b4513; text-align: left; font-family: 'IM Fell English', serif;">
+                <h3 style="text-align:center; color:#740001; margin-top:0;">How to Play</h3>
+                <p>
+                    ¡Bienvenido, joven aprendiz! Has recibido acceso exclusivo al <strong>Marauder's Map</strong> (Mapa del Merodeador). Tu misión es dominar los hechizos verbales ocultos en cada rincón de Hogwarts para desbloquear el poder de los 6 Artefactos Mágicos. Desde el <strong>Diagon Alley</strong> hasta el misterioso <strong>Time Turner</strong>, cada ubicación esconde verbos que transformarán tu magia.
+                </p>
+                <p>
+                    Para demostrar tu valía, deberás superar el desafío en la <strong>Dueling Arena</strong> (Arena de Duelo) de cada nivel. Tu objetivo es recolectar <strong>100 House Points</strong> (Puntos de Casa) en una sola sesión de duelo. Cada respuesta correcta es un hechizo exitoso que te otorgará <strong>5 Puntos</strong>. ¡Necesitas acertar 20 hechizos para vencer al guardián del nivel!
+                </p>
+                <p>
+                    No temas a los desafíos. Entra primero en la <strong>Library</strong> (Biblioteca) para estudiar los conjuros en calma. Cuando sientas que la magia fluye por tus venas, cruza el umbral hacia la Arena. Allí, solo tu memoria y rapidez te permitirán vencer. ¡Completa tu <strong>Magic Trunk</strong> (Baúl Mágico) con los 6 artefactos y demuestra que eres un verdadero mago de Gryffindor! ¡La aventura comienza ahora!
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts en orden estricto -->
+    <script src="verbos.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

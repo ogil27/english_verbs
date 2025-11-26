@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dueling Club</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="app-container">
+    <header style="text-align:center; margin-bottom:20px;">
+        <div style="display:flex; justify-content:space-between; align-items:center;">
+            <a href="index.html" style="text-decoration:none; font-weight:bold; color:#b7880b;">← MAP</a>
+            <div style="font-weight:bold;">Gryffindor Duel 🦁</div>
+        </div>
+        <h1 id="level-title" style="margin:10px 0;">Loading...</h1>
+        <div id="progress-container"><div id="progress-bar">Loading...</div></div>
+    </header>
+
+    <div id="study-section">
+        <h2 style="text-align:center; color:#740001;">📚 Study Mode</h2>
+        <div class="dueling-card" onclick="this.classList.toggle('is-flipped')">
+            <div class="card-inner">
+                <div class="card-face card-front"><small>Base Verb</small><h2 id="verb-presente" style="font-size:3rem; color:white;">...</h2></div>
+                <div class="card-face card-back"><h3 id="verb-presente-back">...</h3><div style="text-align:left; width:100%;"><p><strong>Past:</strong> <span id="verb-pasado">...</span></p><p><strong>Participle:</strong> <span id="verb-participio">...</span></p><hr><p><strong>Meaning:</strong> <span id="verb-espanol">...</span></p></div></div>
+            </div>
+        </div>
+        <div style="text-align:center; display:flex; flex-direction:column; gap:10px;">
+            <button id="next-verb-btn" class="magic-button" style="background:#ddd; color:#333;">Next Verb ➡️</button>
+            <button id="start-duel-btn" class="magic-button" style="padding:15px; border:2px solid #740001;">⚔️ START DUEL ⚔️</button>
+        </div>
+    </div>
+
+    <div id="duel-section" style="display:none;">
+        <div style="background:white; padding:20px; border-radius:10px; border:3px solid #740001; text-align:center;">
+            <h2 style="color:#740001;">⚔️ DUELING ARENA ⚔️</h2>
+            <form id="quiz-form" style="margin-top:20px;">
+                <p style="font-size:1.2rem;">Write the <strong id="quiz-form-target" style="color:#d35400;">...</strong> for:<br><span id="quiz-verb-presente" style="font-size:2rem; font-weight:bold; color:#740001;">...</span></p>
+                <input type="text" id="quiz-input" autocomplete="off" style="width:80%; padding:10px; font-size:1.2rem; text-align:center; border:2px solid #D3A625; border-radius:5px; margin:15px 0;">
+                <button type="submit" class="magic-button" style="width:100%;">CAST SPELL! ✨</button>
+                <div id="quiz-feedback" style="min-height:30px; margin-top:15px; font-weight:bold;"></div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="verbos.js"></script>
+<script src="data.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
