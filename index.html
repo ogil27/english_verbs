@@ -18,11 +18,18 @@
             </div>
         </header>
 
-        <!-- EL BAÚL MÁGICO -->
-        <section class="trunk-container">
+        <!-- EL BAÚL MÁGICO (POSICIONAMIENTO ABSOLUTO) -->
+        <section class="trunk-section">
             <h3 class="trunk-title">🎒 My Hogwarts Trunk</h3>
-            <div class="trunk-grid" id="trunk-grid">
-                <!-- Slots generados por JS -->
+            
+            <div class="trunk-wrapper">
+                <!-- IMAGEN BASE: Define el tamaño del contenedor -->
+                <img src="06_Baul_Hogwarts_Abierto_Vacio.png" alt="Magic Trunk" class="trunk-bg">
+                
+                <!-- REJILLA FLOTANTE: Se posiciona sobre la imagen -->
+                <div class="trunk-grid" id="trunk-grid">
+                    <!-- Slots generados por JS -->
+                </div>
             </div>
         </section>
 
@@ -37,22 +44,22 @@
             </button>
             
             <div id="instructions-panel" style="display: none; margin-top: 20px; background: rgba(255,255,255,0.8); padding: 20px; border-radius: 10px; border: 1px solid #8b4513; text-align: left; font-family: 'IM Fell English', serif;">
-                <h3 style="text-align:center; color:#740001; margin-top:0;">How to Play</h3>
-                <p>
-                    ¡Bienvenido, joven aprendiz! Has recibido acceso exclusivo al <strong>Marauder's Map</strong> (Mapa del Merodeador). Tu misión es dominar los hechizos verbales ocultos en cada rincón de Hogwarts para desbloquear el poder de los 6 Artefactos Mágicos. Desde el <strong>Diagon Alley</strong> hasta el misterioso <strong>Time Turner</strong>, cada ubicación esconde verbos que transformarán tu magia.
-                </p>
-                <p>
-                    Para demostrar tu valía, deberás superar el desafío en la <strong>Dueling Arena</strong> (Arena de Duelo) de cada nivel. Tu objetivo es recolectar <strong>100 House Points</strong> (Puntos de Casa) en una sola sesión de duelo. Cada respuesta correcta es un hechizo exitoso que te otorgará <strong>5 Puntos</strong>. ¡Necesitas acertar 20 hechizos para vencer al guardián del nivel!
-                </p>
-                <p>
-                    No temas a los desafíos. Entra primero en la <strong>Library</strong> (Biblioteca) para estudiar los conjuros en calma. Cuando sientas que la magia fluye por tus venas, cruza el umbral hacia la Arena. Allí, solo tu memoria y rapidez te permitirán vencer. ¡Completa tu <strong>Magic Trunk</strong> (Baúl Mágico) con los 6 artefactos y demuestra que eres un verdadero mago de Gryffindor! ¡La aventura comienza ahora!
-                </p>
+                <p>¡Atención, estudiante de Hogwarts! 🏰✨</p>
+                <p>Lo que tienes ante ti no es un simple mapa, es el legendario <strong>Marauder's Map</strong> (Mapa del Merodeador) 🗺️👣. Ha sido hechizado para revelar los secretos de los verbos irregulares. Tu destino es recorrer este mundo para recolectar los 6 Artefactos Mágicos Legendarios 🏆 y completar tu <strong>Magic Trunk</strong> (Baúl Mágico) 🎒.</p>
+                <h3 style="color:#740001; margin-top:20px;">¿Cómo funciona tu aventura? 🧭</h3>
+                <p>Cada localización tiene dos caras. Visita la <strong>Library</strong> 📚 para estudiar y luego entra en la <strong>Dueling Arena</strong> ⚔️.</p>
+                <h3 style="color:#740001; margin-top:20px;">El Desafío de los 100 Puntos: 💯</h3>
+                <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 15px;">
+                    <li>Tu objetivo es conseguir <strong>100 House Points</strong> (Puntos de Casa) 💎.</li>
+                    <li>Cada respuesta correcta te otorga <strong>5 Puntos</strong> ✨.</li>
+                    <li>¡Necesitas acertar <strong>20 hechizos</strong> para vencer! 🗝️</li>
+                </ul>
+                <p>Si tu magia falla, no te rindas. ¡Levanta tu varita y que comience el duelo! 🧙‍♂️🔥</p>
             </div>
         </div>
 
     </div>
 
-    <!-- Scripts en orden estricto -->
     <script src="verbos.js"></script>
     <script src="data.js"></script>
     <script src="app.js"></script>
